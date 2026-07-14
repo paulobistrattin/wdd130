@@ -20,7 +20,7 @@ aside img {
 
 aside h2 {
   position: absolute;
-  top: 410px;
+  top: 445px;
   left: 140px;
 }
 
@@ -67,5 +67,5 @@ footer {
 }
 
 .indent {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
