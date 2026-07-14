@@ -40,7 +40,7 @@ h1 {
 }
 
 p {
-  maximum-width: 550px;
+  max-width: 550px;
 }
 
 main img {
