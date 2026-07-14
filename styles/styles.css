@@ -13,6 +13,12 @@ aside {
   text-align: center;
 }
 
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
+
 aside img {
   width: 200px;
   height: auto;
@@ -39,6 +45,7 @@ main img {
   border: 1px solid #ccc;
   padding: 5px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  float: right;
 }
 
 p { padding: 0;}
