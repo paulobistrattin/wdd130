@@ -54,6 +54,10 @@ main img {
 
 p { padding: 0;}
 
+ul {
+  maximum-width: 320px;
+}
+
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
@@ -68,7 +72,6 @@ footer {
   padding: 1rem;
   background-color: #ddd;
   color: #000;
-  maximum-width: 320px;
 }
 
 .indent {
