@@ -39,6 +39,10 @@ h1 {
     color: #333; 
 }
 
+p {
+  maximum-width: 550px;
+}
+
 main img {
   width: 150px;
   height: auto;
