@@ -68,6 +68,7 @@ footer {
   padding: 1rem;
   background-color: #ddd;
   color: #000;
+  maximum-width: 320px;
 }
 
 .indent {
