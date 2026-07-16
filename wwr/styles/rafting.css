@@ -37,6 +37,17 @@ nav, p, section, article {
   text-decoration: none;
 }
 
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    margin-top: 10px;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: auto;
+}
 .hero {
   position: relative;
 }
