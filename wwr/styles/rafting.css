@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #055a05;      /* Forest Green - change to match your brand */
-  --secondary-color: #f4a261;    /* Warm Sand */
-  --accent1-color: #264653;      /* Dark Slate Blue */
-  --accent2-color: #e9c46a;      /* Light Yellow */
+  --primary-color: #055a05;     
+  --secondary-color: #f4a261;    
+  --accent1-color: #264653;      
+  --accent2-color: #e9c46a;      
   --heading-font: "Georgia", "Times New Roman", serif;
   --body-font: "Arial", "Helvetica", sans-serif;
 }
@@ -73,4 +73,12 @@ h1 {
   height: auto;
   margin-left: 15px;
   border-radius: 4px;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+footer {
+    border-top: 3px solid var(--accent2-color);
 }
