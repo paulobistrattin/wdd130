@@ -77,3 +77,8 @@ footer {
 .indent {
   padding-left: 2rem;
 }
+
+header, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
