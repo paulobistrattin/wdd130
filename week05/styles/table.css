@@ -1,7 +1,7 @@
 table {
   border-collapse: collapse;
   border: 2px solid rgb(140 140 140);
-  letter-sapcing: 1px;
+  letter-spacing: 1px;
 }
 
 th, td {
@@ -10,8 +10,25 @@ th, td {
   text-align: center;
 }
 
-thead tr, tfoor tr {
+thead tr, tfoot tr {
   background-color: rgb(0 0 0);
   color: white;
   font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+tbody th {
+  background-color: #f4f4f4;
+  vertical-align: middle;
 }
