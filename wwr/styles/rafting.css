@@ -81,11 +81,7 @@ nav, section, article {
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.cta-btn:hover {
-  transform: scale(1.05);
-}
-
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -338,4 +334,15 @@ fieldset label {
 
 .grid-highlights figcaption {
   padding: 16px;
+}
+
+.cta-btn:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
 }
