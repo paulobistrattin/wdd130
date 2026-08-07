@@ -1,12 +1,12 @@
 
 :root {
-  --primary-color: #053B50;      
-  --secondary-color: #176B87;    
-  --accent-color: #64CCC5;       
-  --bg-light: #F8F9FA;           
-  --card-bg: #FFFFFF;            
-  --text-dark: #222222;          
-  --text-light: #FFFFFF;         
+  --primary-color: #053B50;
+  --secondary-color: #176B87;
+  --accent-color: #64CCC5;
+  --bg-light: #F8F9FA;
+  --card-bg: #FFFFFF;
+  --text-dark: #222222;
+  --text-light: #FFFFFF;
   --font-main: Arial, Helvetica, sans-serif;
 }
 
@@ -115,15 +115,6 @@ nav a:hover {
   margin-top: 40px;
 }
 
-.hero article img {
-  width: 100px;
-  height: 70px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin: 0 auto 10px auto;
-  border: 2px solid var(--accent-color);
-}
-
 .history {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -149,51 +140,114 @@ nav a:hover {
   border-radius: 8px;
 }
 
-.adventures, .trips-container {
+.grid-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
   margin-bottom: 2.5rem;
 }
 
-.adventures h2, .trips-container h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.adventures-grid, .trips-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.adventures figure, .trip-card {
+.grid-highlights figure {
   background: var(--card-bg);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   text-align: center;
-  padding-bottom: 10px;
-  transition: transform 0.2s ease-in-out;
+  padding-bottom: 12px;
 }
 
-.adventures figure:hover, .trip-card:hover {
-  transform: translateY(-4px);
-}
-
-.adventures img, .trip-card img {
+.grid-highlights img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
 }
 
-.adventures figcaption, .trip-card h3 {
-  padding: 10px 10px 0 10px;
+.grid-highlights figcaption {
+  padding: 10px 8px 0;
   font-weight: bold;
   color: var(--primary-color);
 }
 
-.contact-layout {
+.trip-descriptions {
+  margin-bottom: 2.5rem;
+}
+
+.trip-descriptions h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.trip-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trip-info {
+  padding: 1.5rem;
+}
+
+.trips-cta {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+}
+
+.trips-cta h2 {
+  color: var(--text-light);
+}
+
+.cta-button, .cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.trips-table-container {
+  margin-bottom: 2.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.contact-layout, .contact-form, .newsletter {
   background-color: var(--card-bg);
   padding: 2rem;
   border-radius: 8px;
@@ -201,18 +255,38 @@ nav a:hover {
   margin-bottom: 2.5rem;
 }
 
+.employees {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.employees figure {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.employees img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 form label {
   font-weight: bold;
   color: var(--primary-color);
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
 }
 
 form input[type="text"],
@@ -225,20 +299,16 @@ form textarea {
   width: 100%;
 }
 
-form button {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-  padding: 12px;
-  border: none;
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
   border-radius: 4px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s;
 }
 
-form button:hover {
-  background-color: var(--secondary-color);
+fieldset legend {
+  padding: 0 8px;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 footer {
@@ -247,40 +317,10 @@ footer {
   align-items: center;
   padding: 1.5rem 0;
   border-top: 3px solid var(--accent-color);
-  margin-top: 2.5rem;
-  font-size: 0.95rem;
-  color: #555;
+  margin-top: 2rem;
 }
 
-footer .socials {
+.socials {
   display: flex;
   gap: 1rem;
-}
-
-footer .socials a img {
-  width: 28px;
-  height: 28px;
-  transition: opacity 0.2s;
-}
-
-footer .socials a img:hover {
-  opacity: 0.7;
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .history, .contact-layout {
-    grid-template-columns: 1fr;
-  }
-
-  footer {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
 }
