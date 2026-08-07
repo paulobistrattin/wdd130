@@ -72,10 +72,10 @@ nav a:hover {
 
 .hero {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   margin-bottom: 2.5rem;
   border-radius: 8px;
   overflow: hidden;
@@ -83,8 +83,6 @@ nav a:hover {
 }
 
 .hero img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
   width: 100%;
   max-height: 400px;
   object-fit: cover;
@@ -93,25 +91,49 @@ nav a:hover {
 .hero h1 {
   position: absolute;
   top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: rgba(5, 59, 80, 0.85);
   color: var(--text-light);
-  padding: 6px 20px;
+  padding: 8px 24px;
   border-radius: 20px;
   font-size: 1.5rem;
   z-index: 2;
+  white-space: nowrap;
+  margin: 0;
 }
 
 .hero article {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: rgba(5, 59, 80, 0.88);
   color: var(--text-light);
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 8px;
+  width: 90%;
   max-width: 550px;
   text-align: center;
   z-index: 2;
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero article img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-color);
+}
+
+.hero article p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--text-light);
 }
 
 .history {
