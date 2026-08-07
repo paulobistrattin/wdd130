@@ -33,7 +33,6 @@ header, main, footer {
   margin: 0 auto;
 }
 
-/* 1. HEADER FIXES */
 header {
   display: flex;
   justify-content: space-between;
@@ -63,7 +62,6 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
-/* 2. HERO FIXES & TEXT OVERLAY */
 .hero {
   position: relative;
   width: 100%;
@@ -132,7 +130,6 @@ nav a:hover {
   transform: scale(1.03);
 }
 
-/* 3. NEWSLETTER SECTION */
 .newsletter {
   background-color: #f9f9f9;
   padding: 2rem;
@@ -175,12 +172,17 @@ nav a:hover {
   background-color: var(--primary-color);
 }
 
-/* 4. GRID HIGHLIGHTS / TRIPS CARDS */
 .grid-highlights {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin: 2rem 0;
+}
+
+.grid-highlights h2,
+.grid-highlights > p {
+  grid-column: 1 / -1;
+  text-align: center;
 }
 
 .grid-highlights figure {
@@ -207,7 +209,6 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* 5. FOOTER FIXES */
 footer {
   display: flex;
   justify-content: space-between;
