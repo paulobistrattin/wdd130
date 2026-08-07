@@ -246,3 +246,14 @@ footer p {
   width: 32px;
   height: 32px;
 }
+
+.trip-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.socials img {
+  width: 32px;
+  height: 32px;
+}
