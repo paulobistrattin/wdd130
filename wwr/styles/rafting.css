@@ -154,6 +154,12 @@ nav a:hover {
   margin-top: 1rem;
 }
 
+.newsletter label {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+}
+
 .newsletter input {
   padding: 8px 12px;
   border: 1px solid #ccc;
