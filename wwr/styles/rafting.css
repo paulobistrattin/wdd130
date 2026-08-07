@@ -64,14 +64,15 @@ nav a:hover {
 
 .hero {
   position: relative;
-  width: 100%;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   min-height: 350px;
   background-color: var(--primary-color);
-  border-radius: 8px;
   overflow: hidden;
-  margin: 1rem 0;
 }
-
 .hero img {
   width: 100%;
   height: 100%;
@@ -223,17 +224,17 @@ footer p {
   font-size: 0.95rem;
 }
 
-.socialmedia {
+.social-links {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-.socialmedia a {
+.social-links a {
   text-decoration: none;
 }
 
-.socialmedia img {
+.social-links img {
   width: 32px;
   height: 32px;
 }
