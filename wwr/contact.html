@@ -34,6 +34,44 @@
             referrerpolicy="strict-origin-when-cross-origin">
           </iframe>
         </section>
+
+        <section class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form action="#" method="post">
+            <div class="form-item">
+              <label for="username">Name:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-item">
+              <label for="useremail">Email Address:</label>
+              <input type="email" id="useremail" name="useremail" required>
+            </div>
+
+            <fieldset class="form-item">
+              <legend>Purpose of Message:</legend>
+              <label><input type="radio" id="general" name="purpose" value="general" checked> General Inquiry</label>
+              <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+              <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
+            </fieldset>
+
+            <div class="form-item">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-item">
+              <label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                Please subscribe me to the monthly newsletter
+              </label>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </div>
+
       <section class="employees">
         <h2>Meet Our Team</h2>
         <figure>
@@ -48,41 +86,6 @@
           <img src="images/employee3.jpg" alt="Photo of Bobby, Safety Officer">
           <figcaption>Robert Magoon - Safety Officer</figcaption>
         </figure>
-      </section>
-      <section class="contact-form">
-        <h2>Send Us a Message</h2>
-        <form action="#" method="post">
-          <div class="form-item">
-            <label for="username">Name:</label>
-            <input type="text" id="username" name="username" required>
-          </div>
-
-          <div class="form-item">
-            <label for="useremail">Email Address:</label>
-            <input type="email" id="useremail" name="useremail" required>
-          </div>
-
-          <fieldset class="form-item">
-            <legend>Purpose of Message:</legend>
-            <label><input type="radio" id="general" name="purpose" value="general" checked> General Inquiry</label>
-            <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
-            <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
-          </fieldset>
-
-          <div class="form-item">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-
-          <div class="form-item">
-            <label>
-              <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
-              Please subscribe me to the monthly newsletter
-            </label>
-          </div>
-
-          <button type="submit">Send Message</button>
-        </form>
       </section>
     </main>
     <footer>
