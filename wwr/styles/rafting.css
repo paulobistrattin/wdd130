@@ -129,6 +129,9 @@ nav a:hover {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--accent-color);
+  float: left;           
+  margin-right: 1rem;     
+  margin-bottom: 0.5rem;
 }
 
 .hero article p, .hero-msg p {
