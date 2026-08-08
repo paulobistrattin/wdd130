@@ -408,3 +408,11 @@ footer {
   height: 32px;
   object-fit: contain;
 }
+
+.trip-card:hover,
+.grid-highlights figure:hover,
+.company-info:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
